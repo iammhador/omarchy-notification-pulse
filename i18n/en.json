@@ -1,0 +1,53 @@
+{
+  "panel.title": "Notifications",
+  "panel.empty": "Nothing yet",
+  "panel.count": {
+    "one": "%1 notification",
+    "other": "%1 notifications"
+  },
+  "panel.days": {
+    "one": "last %1 day",
+    "other": "last %1 days"
+  },
+  "clear.confirm": "Clear all?",
+  "search.placeholder": "Search notifications",
+  "filter.all": "All",
+  "day.today": "Today",
+  "day.yesterday": "Yesterday",
+  "time.now": "now",
+  "time.minutes": {
+    "one": "%1 min ago",
+    "other": "%1 min ago"
+  },
+  "time.hours": {
+    "one": "%1 hour ago",
+    "other": "%1 hours ago"
+  },
+  "tooltip.unread": {
+    "one": "%1 unread notification",
+    "other": "%1 unread notifications"
+  },
+  "tooltip.none": "No new notifications",
+  "tooltip.dnd": "Do Not Disturb is on · right-click to turn off",
+  "empty.none": "No notifications",
+  "empty.nomatch": "No matching notifications",
+  "panel.new": {
+    "one": "%1 new",
+    "other": "%1 new"
+  },
+  "row.via": "via %1",
+  "read.all": "Mark all read",
+  "clear.label": "Clear history",
+  "dnd.on": "Do Not Disturb is on",
+  "dnd.off": "Do Not Disturb",
+  "day.pinned": "Pinned",
+  "group.more": {
+    "one": "+%1 more",
+    "other": "+%1 more"
+  },
+  "group.less": "Show less",
+  "today.count": {
+    "one": "%1 today",
+    "other": "%1 today"
+  }
+}

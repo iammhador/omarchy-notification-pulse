@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.iammhador.notification-pulse",
+  "name": "Notification Pulse",
+  "version": "1.4.0",
+  "author": "iammhador",
+  "license": "MIT",
+  "description": "A notification inbox for the Omarchy bar: a bell that pulses in each sender's colour, days of searchable history grouped by day and sender, 50+ recognised sites, clickable links, pins, a today summary and full keyboard control.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Notification Pulse",
+    "description": "Notification inbox with history, search and an unread badge.",
+    "category": "System",
+    "aliases": [
+      "notifications",
+      "notification center",
+      "inbox",
+      "history"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "retentionDays": 7,
+      "maxEntries": 500,
+      "showBadge": true,
+      "pulse": true,
+      "groupSenders": true,
+      "showToday": true,
+      "unknownIcon": "letter"
+    },
+    "schema": [
+      {
+        "key": "retentionDays",
+        "type": "number",
+        "label": "Days of history to keep (1-90)",
+        "defaultValue": 7
+      },
+      {
+        "key": "maxEntries",
+        "type": "number",
+        "label": "Most notifications to keep (50-2000)",
+        "defaultValue": 500
+      },
+      {
+        "key": "showBadge",
+        "type": "boolean",
+        "label": "Show the unread count on the bell",
+        "defaultValue": true
+      },
+      {
+        "key": "pulse",
+        "type": "boolean",
+        "label": "Swing the bell in the sender's colour when something arrives",
+        "defaultValue": true
+      },
+      {
+        "key": "groupSenders",
+        "type": "boolean",
+        "label": "Fold back-to-back notifications from one site into a group",
+        "defaultValue": true
+      },
+      {
+        "key": "showToday",
+        "type": "boolean",
+        "label": "Show the today-at-a-glance strip",
+        "defaultValue": true
+      },
+      {
+        "key": "unknownIcon",
+        "type": "string",
+        "label": "Unknown sites in a browser: letter or app",
+        "defaultValue": "letter"
+      }
+    ]
+  }
+}
