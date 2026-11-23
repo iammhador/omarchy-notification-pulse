@@ -557,12 +557,12 @@ BarWidget {
       id: badge
       visible: root.showBadge && root.unread > 0 && !root.dnd
       readonly property string label: root.unread > 99 ? "99+" : Commons.I18n.formatNumber(root.unread)
-      height: Math.round(Style.font.caption * 1.25)
-      width: Math.max(height, badgeText.implicitWidth + Style.space(6))
+      height: Math.round(Style.font.caption * 1.05)
+      width: Math.max(height, badgeText.implicitWidth + Style.space(5))
       radius: height / 2
       color: flash.running ? root.pulseColor : root.accent
       x: Math.round(parent.width / 2 - Style.space(1))
-      y: Math.round(parent.height / 2 - height - Style.space(1))
+      y: Math.max(0, Math.round(parent.height / 2 - height + Style.space(2)))
 
       Text {
         id: badgeText
@@ -571,7 +571,7 @@ BarWidget {
         text: badge.label
         color: Commons.Color.background
         font.family: root.fontFamily
-        font.pixelSize: Math.round(Style.font.caption * 0.9)
+        font.pixelSize: Math.round(Style.font.caption * 0.75)
         font.bold: true
       }
     }
